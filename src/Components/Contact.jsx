@@ -1,10 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
+import {ContactContainer, ContactTitle, ConnectBox, Connect} from './Style';
 
 const Contact = () => {
     return (
-        <Container id="contact">
-            <h2>Contact Me</h2>
+        <ContactContainer id="contact">
+            <ContactTitle>Contact Me</ContactTitle>
             <ConnectBox>
                 <Connect href="https://www.linkedin.com/in/chris-weng/">
                     <img src="https://img.icons8.com/fluent/36/000000/linkedin.png" alt="linkedin-icon"/>
@@ -15,33 +15,9 @@ const Contact = () => {
                 <Connect href="mailto:chrisweng18@gmail.com">
                     <img src="https://img.icons8.com/material-outlined/36/000000/mail.png" alt="mail-icon"/>
                 </Connect>
-            </  ConnectBox>
-        </Container>
+            </ ConnectBox>
+        </ContactContainer>
     )
 }
 
 export default Contact;
-
-const Container = styled.div`
-        text-align: center;
-        height: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-item: center;
-
-        @media (max-width: 768px){
-            height: 30%;
-        }
-    `;
-
-    const ConnectBox = styled.div`
-        display: flex;
-        justify-content: center;
-    `;
-
-    const Connect = styled.a`
-        text-align: center;
-        cursor: pointer;
-        margin: 0.5rem;
-    `;

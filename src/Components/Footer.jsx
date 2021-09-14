@@ -1,9 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
+import { FooterContainer, CopyRight } from './Style';
 
 const Footer = () => {
     return (
-        <Container>
+        <FooterContainer>
             <CopyRight>&copy;
                 {' '}
                 Chris Weng
@@ -12,18 +12,8 @@ const Footer = () => {
                 {' '}
                 All rights reserved.
             </CopyRight>
-        </Container>
+        </FooterContainer>
     )
 }
 
 export default Footer;
-
-const Container = styled.footer`
-    background-color: #f8f5f1;
-    padding: 1.5rem 1rem;
-`;
-
-const CopyRight = styled.p`
-    text-align: center;
-    font-family: noto-serif;
-`;
